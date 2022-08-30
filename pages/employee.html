@@ -57,24 +57,24 @@
         </div>
         <!-- page content -->
         <div class="page-content">
-        <!-- page header -->
+            <!-- page header -->
             <div class="page__header">
                 <div class="page__title">Danh sách nhân viên</div>
-                <button class="m-button m-button-icon">
+                <button class="m-button m-button-icon" id="buttonAddEm">
                     <i class="m-icon page__addacc"></i>
                     Thêm nhân viên
                 </button>
             </div>
-        <!-- page filter -->
+            <!-- page filter -->
             <div class="page__filter">
                 <div class="page__tool">
-                        <div class="m-inputiconcontainer">
-                            <div class="">
-                                <input type="text" name="" class="m-input m-input-icon m-input-16"
-                                    placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại">
-                                <i class="fas fa-times m-input__clear"></i>
-                            </div>
+                    <div class="m-inputiconcontainer">
+                        <div class="">
+                            <input type="text" name="" class="m-input m-input-icon m-input-16"
+                                placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại">
+                            <i class="fas fa-times m-input__clear"></i>
                         </div>
+                    </div>
                     <div class="m-combobox-container">
                         <div class="m-combobox">
                             <input type="text" class="m-combobox__input" value="Tất cả phòng ban">
@@ -106,7 +106,7 @@
 
                 </div>
             </div>
-        <!-- page table -->
+            <!-- page table -->
             <div class="page__table">
                 <table class="m-table" id="tbEmployeeList">
                     <thead>
@@ -165,7 +165,7 @@
 
                 </table>
             </div>
-        <!-- page navigation -->
+            <!-- page navigation -->
             <div class="page__navigation">
 
                 <div class="m-paging">
@@ -233,6 +233,165 @@
             </div>
         </div>
     </div>
+
+    <!-- phần thêm mới nhân viên -->
+        <div class="m-popup m-popup-custom" id="popupInfoEm">
+            <div class="m-popup-container m-popup-container--width">
+                <div class="m-popup__title m-popup__title--uppercase">Thông tin nhân viên</div>
+                <button class="m-popup__closebtn"><i class="fas fa-times"></i></button>
+                <div class="m-popup__main">
+                    <div class="m-popup__content">
+                        <div class="">
+                            <div class="m-popup__avatar">
+                            </div>
+                            <div class="m-popup__uploadtip">
+                                (Vui lòng lựa chọn ảnh có định dạng .jpg .jpeg .png .gif ...)
+                            </div>
+                        </div>
+                        <div class="m-popup__text">
+                            <div class="m-popup__section">
+                                A. Thông tin chung:
+                            </div>
+                            <div class="m-popup__decor"></div>
+                            <div class="m-popup__grid">
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Mã nhân viên </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập mã nhân viên" id ='EmployeeCodeInput'>
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Họ và tên </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập họ và tên">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Ngày sinh</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="Nhập ngày sinh">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-calendar-alt m-calender-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Giới tính</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-chevron-down m-combobox__icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Số CMTND/ Căn cước </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập số CMTND/ Căn cước">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Ngày cấp</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="__/__/____">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-calendar-alt m-calender-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Nơi cấp </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập nơi cấp">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="">
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Email </label>(<span class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập email">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Số điện thoại </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập số điện thoại">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="m-popup__section">
+                                B. Thông tin công việc:
+                            </div>
+                            <div class="m-popup__decor"></div>
+                            <div class="m-popup__grid">
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Vị trí</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="Nhập vị trí">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-chevron-down m-combobox__icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Phòng ban</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="Nhập phòng ban">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-chevron-down m-combobox__icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Mã số thuế cá nhân </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập số điện thoại">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Lương cơ bản </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập số điện thoại">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Ngày gia nhập công ty</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="__/__/____">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-calendar-alt m-calender-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Tình trạng công việc</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input"
+                                            placeholder="Nhập tình trạng công việc">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-chevron-down m-combobox__icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-popup__command">
+                    <button class="m-button m-button--newcl">Hủy</button>
+                    <button class="m-button" id="buttonSaveEm"><i class="far fa-save m-save"></i> Lưu</button>
+                </div>
+            </div>
+        </div>
+    <!-- phần loading -->
+    <div id="dlgEmployeeDetail" class="loading">
+        <div class="loading__content">
+            <div class="loading__icon"></div>
+            <div class="loading__text">Đang xử lý</div>
+        </div>
+    </div>
+
     <!-- Thư viện JS -->
     <script src="/js/jquery-3.6.0.min.js"></script>
     <!-- JS dùng chung -->
