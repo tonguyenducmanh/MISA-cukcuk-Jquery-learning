@@ -1,0 +1,101 @@
+.header {
+    height: 48px;
+    width: 100%;
+    display: flex;
+}
+
+.header .header-left {
+    width: 226px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+.header .header-left .sibar {
+    background-image: url(../../assets/img/toggle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header .header-left .logo {
+    background-image: url(../../assets/img/cukcuk-logo.png);
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.header .header-right {
+    width: calc(100% - 226px);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    box-sizing: border-box;
+}
+
+.header .header-right .header__store{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: 600;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.header .header__arrow{
+    font-size: 15px;
+}
+
+.header .header__arrow::after{
+    margin-left: 15px;
+    color: black;
+    width: 13px;
+    height: 13px;
+    font-size: 13px;
+    font-family: fontawesome;
+    content :"\f078";
+}
+
+.header .header-right .header__user{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;margin-right: 16px;
+    box-sizing: border-box;
+}
+
+.header .header-right .header__avatar{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../assets/icon/avatar-default.png);
+}
+
+.header .header-right .header__username{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header .header-right .header__menu{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../assets/icon/option.png);
+}

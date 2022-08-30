@@ -1,0 +1,73 @@
+.m-inputlabelcontainer .m-label{
+    font-weight: 600;
+}
+.m-inputlabelcontainer .m-label--musthave{
+    color: #EC3340;
+}
+.m-inputlabelcontainer .m-input{
+    margin-top: 4px;
+    max-width: calc(var(--columns-width)*3);
+    height: 40px;
+    border: 1px solid #bbbbbb ;
+    border-radius: 4px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: unset;
+}
+
+.m-inputlabelcontainer .m-input:focus{
+    outline: none;
+    border: 1px solid #019160;
+}
+
+.m-inputlabelcontainer .m-input::placeholder{
+    font-size: 11px;
+    color: #bbbbbb;
+    font-weight: 500;
+}
+
+.m-inputlabelcontainer .m-input-error{
+    outline: none;
+    border: 1px solid #FF4747;
+}
+
+.m-inputlabelcontainer .m-error-info{
+    background-color: #FF4747;
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 400;
+    position: relative;
+    width: 150px;
+}
+
+.m-inputlabelcontainer .m-error-arrow{
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform: translate(-50%,-25%);
+    border-width: 15px;
+    border-style: solid;
+    border-color: #FF4747 transparent transparent transparent;
+}
+
+.m-inputlabelcontainer .m-input__clear{
+    display: none;
+}
+
+.m-inputlabelcontainer .m-input__clear--showing{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: -25px;
+    width: 15px;
+    height: 15px;
+    background-color: #e4e3e3;
+    text-align: center;
+    color: #a3a3a3;
+    line-height: 16px;
+    font-size: 10px;
+    border-radius: 50%;
+}
+

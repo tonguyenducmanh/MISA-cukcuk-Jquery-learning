@@ -1,0 +1,42 @@
+.navbar{
+    width: 226px;
+    height: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-right: 1px solid #E5E5E5;
+}
+
+.navbar .menu-item{
+    cursor: pointer;
+    display: flex;
+    height: 44px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbar .menu-item:hover{
+    background-color: #E5E5E5;
+    font-weight: 600;
+}
+
+
+.navbar .menu-item .menu-icon{
+    margin-left: 16px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.navbar .menu-item-selected{
+    background-color: #019160;
+    color:#ffffff;
+}
+.navbar .menu-item-selected:hover{
+    background-color: #019160;
+    color:#ffffff;
+    font-weight: 500;
+}
+
+.navbar .menu-icon-selected{
+    filter: brightness(0%) invert(100%);
+}

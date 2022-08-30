@@ -1,0 +1,25 @@
+.m-icon{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.m-icon-tongquan{
+    background-image:  url(../../assets/icon/dashboard.png);
+}
+
+.m-icon-baocao{
+    background-image: url(../../assets/icon/report.png);
+}
+
+.m-icon-muahang{
+    background-image: url(../../assets/icon/dashboard.png);
+}
+
+.m-icon-nhanvien{
+    background-image: url(../../assets/icon/dic-employee.png);
+}
+
+.m-icon-hethong{
+    background-image: url(../../assets/icon/setting.png);
+}

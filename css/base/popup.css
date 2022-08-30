@@ -1,0 +1,211 @@
+.m-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+    z-index: 1;
+}
+
+.m-popup-show {
+    display: block;
+}
+
+
+.m-popup-container {
+    position: relative;
+    width: 450px;
+    min-height: 184px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.m-popup-custom {
+    padding-top: 200px;
+    overflow-y: scroll;
+}
+
+.m-popup-custom::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.m-popup-custom {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.m-popup-container--width {
+    width: fit-content;
+}
+
+.m-popup .m-popup__main {
+    flex: 1;
+    position: relative;
+    padding: 24px;
+}
+
+.m-popup .m-popup__main .m-popup__content {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+
+.m-popup .m-popup__main .m-popup__content .m-popup__icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    position: relative;
+}
+
+.m-popup .m-popup__main .m-popup__content .m-popup__icon--show {
+    display: flex;
+    align-items: center;
+}
+
+.m-popup .m-popup__main .m-popup__content .m-popup__icon--warning {
+    color: #FDC200;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.m-popup .m-popup__main .m-popup__content .m-popup__icon--alert {
+    color: #F65454;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.m-popup .m-popup__main .m-popup__closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background-color: unset;
+    border: unset;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.m-popup .m-popup__main .m-popup__closebtn:hover {
+    color: #b3b3b3;
+    background-color: #e5e5e5;
+}
+
+.m-popup .m-popup__main .m-popup__title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.m-popup .m-popup__main .m-popup__title--uppercase {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.m-popup .m-popup__main .m-popup__text--bold {
+    font-weight: 600;
+}
+
+.m-popup .m-popup__command {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 16px;
+    height: 60px;
+    padding-right: 24px;
+    background-color: #F4F4F4;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.m-popup .m-popup__command .m-button--newcl {
+    background-color: unset;
+    color: #000000;
+}
+
+.m-popup .m-popup__command .m-button--newcl:hover {
+    background-color: #e5e5e5;
+}
+
+.m-popup .m-popup__command .m-button--alert {
+    background-color: #f65454;
+}
+
+.m-popup .m-popup__command .m-button--alert:hover {
+    background-color: #f65454;
+}
+
+.m-popup .m-popup__grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    column-gap: 16px;
+}
+
+.m-popup .m-popup-container .m-popup__text .m-combobox-container--fixwidth {
+    width: 100%;
+}
+
+.m-popup .m-popup-container .m-popup__text .m-calender-icon {
+    color: #464646;
+}
+
+.m-popup .m-save {
+    padding-right: 5px;
+}
+
+.m-popup .m-popup__avatar {
+    background-image: url(../../assets/img/default-avatar.jpg);
+    border: 1px solid #b3b3b3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.m-popup .m-popup__uploadtip {
+    width: 150px;
+    text-align: center;
+}
+
+.m-popup .m-popup__section {
+    text-transform: uppercase;
+}
+
+.m-popup .m-popup__decor {
+    width: 75px;
+    height: 4px;
+    background-color: #019160;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+.m-popup .m-popup__grid {
+    display: grid;
+    width: 550px;
+    row-gap: 16px;
+}
+
+.m-popup .m-popup--musthave {
+    color: #F65454;
+}

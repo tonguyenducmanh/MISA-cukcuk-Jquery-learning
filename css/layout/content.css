@@ -1,0 +1,121 @@
+.page-content{
+    width: calc( 100% - 226px);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.page-content .page__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.page-content .page__header .page__addacc{
+    position: relative;
+    margin-left: 10px;
+}
+
+.page-content .page__header .page__addacc::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-left: -8px;
+    width: 20px;
+    height: 20px;
+    background-image:url(../../assets/icon/add.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.page-content .page__title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.page-content .page__filter{
+    box-sizing: border-box;
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-content .page__filter .page__tool{
+    align-items: center;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 45% 32.5% 32.5%;
+    column-gap: 10px;
+}
+
+.page-content .page__filter .page__reload{
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+.page-content .page__filter .page__reload::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 20px;
+    background-image:url(../../assets/icon/refresh.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.page-content .page__table{
+    flex: 1;
+    position: relative;
+    overflow: auto;
+}
+
+.page-content .page__table .m-table{
+    position: absolute;
+}
+.page-content .page__table .m-table thead{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+.page-content .page__table .m-table thead tr th:nth-child(1){
+    left: 0;
+    position: sticky;
+    z-index: 3;
+}
+.page-content .page__table .m-table thead tr th:nth-child(2){
+    left: 35px;
+    position: sticky;
+    z-index: 2;
+}
+.page-content .page__table .m-table tbody tr td:nth-child(1){
+    left: 0;
+    position: sticky;
+    z-index: 1;
+}
+.page-content .page__table .m-table tbody tr td:nth-child(2){
+    left: 35px;
+    position: sticky;
+    z-index: 1;
+}
+
+
+
+.page-content .page__navigation{
+    margin-top: 0px;
+}
