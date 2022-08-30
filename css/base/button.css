@@ -1,0 +1,46 @@
+.m-button{
+    height: 40px;
+    padding: 0 24px;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    background-color: #019160;
+    color: #ffffff;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.m-button:hover{
+    background-color: #2fbe8e;
+}
+
+.m-button:active{
+    background-color: #01b075;
+}
+.m-button-icon, .m-button-left{
+    text-align: left;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.m-icon{
+    padding-right: 8px;
+}
+
+.combo-button{
+    display: flex;
+}
+
+.m-button-left{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid #2fbe8e;
+}
+
+.m-button-right{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    min-width: 37px;
+}

@@ -1,0 +1,160 @@
+.m-paging {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-paging .m-paging-left {
+    display: flex;
+    column-gap: 5px;
+}
+
+.m-paging .m-paging-left-modify--bold {
+    font-weight: 600;
+}
+
+.m-paging .m-paging-group {
+    display: flex;
+}
+
+.m-paging .m-paging-center {
+    display: flex;
+}
+
+.m-paging button {
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.m-paging .m-paging-number-group .m-paging-number {
+    border-radius: 50%;
+    border: 1px solid #bbbbbb;
+}
+
+.m-paging .m-paging-number-group .m-paging-number:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.m-paging .m-paging-number-group .m-paging-number-selected {
+    background-color: #019160;
+    color: #ffffff;
+}
+
+.m-paging .m-paging-first-page {
+    background-color: unset;
+    border: unset;
+    background-image: url(../../assets/icon/btn-firstpage.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.m-paging .m-paging-first-page:hover {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.m-paging .m-paging-prev {
+    background-color: unset;
+    border: unset;
+    background-image: url(../../assets/icon/btn-prev-page.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.m-paging .m-paging-prev:hover {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.m-paging .m-paging-next {
+    background-color: unset;
+    border: unset;
+    background-image: url(../../assets/icon/btn-next-page.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.m-paging .m-paging-next:hover {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.m-paging .m-paging-last-page {
+    background-color: unset;
+    border: unset;
+    background-image: url(../../assets/icon/btn-lastpage.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.m-paging .m-paging-last-page:hover {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.m-paging .m-paging-right{
+    position: relative;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.m-paging .m-paging-right-content{
+    position: relative;
+    padding-right: 25px;
+    display: flex;
+    column-gap: 4px;
+}
+
+.m-paging .m-paging-right-content-bold{
+    font-weight: 600;
+}
+
+.m-paging .m-paging-right-content-icon::before{
+    position: absolute;
+    font-family: fontawesome;
+    font-size: 12px;
+    bottom: 2;
+    right: 0;
+    color: #848484;
+    transform: rotate(90deg);
+    content: '\f053 \f054';
+}
+
+.m-paging .m-paging-right .m-paging-right-box{
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.m-paging .m-paging-right .m-paging-right-box-open{
+    display: block;
+}
+
+.m-paging .m-paging-right  .m-paging-right-select{
+    display: flex;
+    column-gap: 5px;
+    padding: 2.5px;
+    padding-left: 5px;
+    padding-right: 25px;
+}
+
+.m-paging .m-paging-right  .m-paging-right-select:hover{
+    background-color: #ededed;
+}
+
+.m-paging .m-paging-right .m-paging-right-select-bold{
+    font-weight: 600;
+}

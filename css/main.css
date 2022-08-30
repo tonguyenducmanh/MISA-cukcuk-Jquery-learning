@@ -1,0 +1,83 @@
+@import url(./layout/header.css);
+@import url(./layout/navbar.css);
+@import url(./layout/content.css);
+
+@import url(./base/button.css);
+@import url(./base/combobox.css);
+@import url(./base/inputIcon.css);
+@import url(./base/inputLabel.css);
+@import url(./base/toastmessage.css);
+@import url(./base/table.css);
+@import url(./base/paging.css);
+@import url(./base/popup.css);
+@import url(./base/icon.css);
+
+/* xóa file temp này đi */
+@import url(./temp.css);
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: roboto;
+    font-size: 13px;
+}
+
+.m-row {
+    margin-bottom: 20px;
+}
+
+
+@font-face {
+    font-family: roboto;
+    src: url(../assets/font/GoogleSans-Regular.otf);
+}
+
+@font-face {
+    font-family: roboto-italic;
+    src: url(../assets/font/GoogleSans-Italic.otf);
+}
+
+@font-face {
+    font-family: roboto-thin;
+    src: url(../assets/font/GoogleSans-Thin.otf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(../assets/font/GoogleSans-Bold.otf);
+}
+
+@font-face {
+    font-family: fontawesome;
+    src: url(../assets/font/fontawesome-5.15.1/webfonts/fa-solid-900.ttf);
+}
+
+.main{
+    width: 100%;
+    height: calc(100vh - 48px);
+    display: flex;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 4px ; 
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

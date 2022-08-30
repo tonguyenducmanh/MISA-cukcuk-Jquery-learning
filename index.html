@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>misa cukcuk</title>
+    <link rel="stylesheet" href="./assets/font/fontawesome-5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    Style Guide <br><br>
+    <!-- header -->
+
+    <div class="m-row">
+        <label for="">11. Header</label>
+        <div class="m-header">
+            <div class="m-header-left">
+                đây là header
+            </div>
+            <div class="m-header-right">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up form thông tin nhân viên-->
+
+    <div class="m-row">
+        <label for="">10.5 Pop-up thông tin nhân viên</label><br>
+        <button class="m-button" id="show-popup--infoem">Hiện pop-up</button>
+        <div class="m-popup m-popup-custom" id="popup--infoem">
+            <div class="m-popup-container m-popup-container--width">
+                <div class="m-popup__main">
+                    <div class="m-popup__title m-popup__title--uppercase">Thông tin nhân viên</div>
+                    <div class="m-popup__content">
+                        <div class="">
+                            <div class="m-popup__avatar">
+                            </div>
+                            <div class="m-popup__uploadtip">
+                                (Vui lòng lựa chọn ảnh có định dạng .jpg .jpeg .png .gif ...)
+                            </div>
+                        </div>
+                        <div class="m-popup__text">
+                            <div class="m-popup__section">
+                                A. Thông tin chung:
+                            </div>
+                            <div class="m-popup__decor"></div>
+                            <div class="m-popup__grid">
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Mã nhân viên </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập mã nhân viên">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Họ và tên </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập họ và tên">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Ngày sinh</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="Nhập ngày sinh">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-calendar-alt m-calender-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Giới tính</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-chevron-down m-combobox__icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Số CMTND/ Căn cước </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập số CMTND/ Căn cước">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Ngày cấp</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="__/__/____">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-calendar-alt m-calender-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Nơi cấp </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập nơi cấp">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="">
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Email </label>(<span class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập email">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Số điện thoại </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập số điện thoại">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="m-popup__section">
+                                B. Thông tin công việc:
+                            </div>
+                            <div class="m-popup__decor"></div>
+                            <div class="m-popup__grid">
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Vị trí</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="Nhập vị trí">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-chevron-down m-combobox__icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Phòng ban</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="Nhập phòng ban">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-chevron-down m-combobox__icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Mã số thuế cá nhân </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập số điện thoại">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-inputlabelcontainer">
+                                    <label for="" class=''>Lương cơ bản </label>(<span
+                                        class="m-label--musthave">*</span>)<br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập số điện thoại">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Ngày gia nhập công ty</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input" placeholder="__/__/____">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-calendar-alt m-calender-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-combobox-container">
+                                    <label for="" class="">Tình trạng công việc</label>
+                                    <div class="m-combobox">
+                                        <input type="text" class="m-combobox__input"
+                                            placeholder="Nhập tình trạng công việc">
+                                        <div class="m-combobox__drop">
+                                            <i class="fas fa-chevron-down m-combobox__icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="m-popup__closebtn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="m-popup__command">
+                    <button class="m-button m-button--newcl">Hủy</button>
+                    <button class="m-button"><i class="far fa-save m-save"></i> Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Form thêm mới hồ sơ -->
+
+    <div class="m-row">
+        <label for="">10.4 Pop-up thêm mới hồ sơ</label><br>
+        <button class="m-button" id="show-popup__newaccount">Hiện pop-up</button>
+        <div class="m-popup" id="popup__newaccount">
+            <div class="m-popup-container">
+                <div class="m-popup__main">
+                    <div class="m-popup__title">Thêm hồ sơ đính kèm</div>
+                    <div class="m-popup__content">
+                        <div class="m-popup__text">
+                            <div class="m-inputlabelcontainer">
+                                <div class="m-row">
+                                    <label for="" class="m-label">Tên loại văn bản</label> <span
+                                        class="m-label--musthave">*</span><br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập tên văn bản">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-row">
+                                    <label for="" class="m-label">Số văn bản</label> <span
+                                        class="m-label--musthave">*</span><br>
+                                    <input type="text" name="" class="m-input" placeholder="Nhập số văn bản">
+                                    <i class="fas fa-times m-input__clear"></i>
+                                </div>
+                                <div class="m-combobox-flex">
+                                    <div class="m-combobox-container">
+                                        <label for="" class="m-combobox__label ">Ngày phát hành văn bản <span
+                                                class="m-label--musthave">*</span></label>
+                                        <div class="m-combobox">
+                                            <input type="text" class="m-combobox__input" placeholder="__/__/____">
+                                            <div class="m-combobox__drop">
+                                                <i class="fas fa-calendar-alt m-calender-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-combobox-container">
+                                        <label for="" class="m-combobox__label ">Ngày văn bản có hiệu lực <span
+                                                class="m-label--musthave">*</span></label>
+                                        <div class="m-combobox">
+                                            <input type="text" class="m-combobox__input" placeholder="__/__/____">
+                                            <div class="m-combobox__drop">
+                                                <i class="fas fa-calendar-alt m-calender-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="m-popup__closebtn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="m-popup__command">
+                    <button class="m-button m-button--newcl">Hủy</button>
+                    <button class="m-button"><i class="far fa-save m-save"></i> Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pop-up bình thường -->
+
+    <div class="m-row">
+        <label for="">10.3 Pop-up bình thường</label><br>
+        <button class="m-button" id="show-popup--normal">Hiện pop-up</button>
+        <div class="m-popup" id="popup--normal">
+            <div class="m-popup-container">
+                <div class="m-popup__main">
+                    <div class="m-popup__title">Pop up thông báo</div>
+                    <div class="m-popup__content">
+                        <div class="m-popup__text">
+                            Hiện bạn chưa thiết lập USB Token. Vui lòng thiết lập và kết nối
+                            với USB Token để ký nộp các hồ sơ.
+                        </div>
+                    </div>
+                    <button class="m-popup__closebtn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="m-popup__command">
+                    <button class="m-button">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pop-up cảnh báo nặng -->
+
+    <div class="m-row">
+        <label for="">10.2 Pop-up cảnh báo nặng</label><br>
+        <button class="m-button" id="show-popup--alert">Hiện pop-up</button>
+        <div class="m-popup" id="popup--alert">
+            <div class="m-popup-container">
+                <div class="m-popup__main">
+                    <div class="m-popup__title">Xóa bản ghi A</div>
+                    <div class="m-popup__content">
+                        <div class="m-popup__icon m-popup__icon--show"> <i
+                                class="fas fa-exclamation-triangle m-popup__icon--alert"></i></div>
+                        <div class="m-popup__text">
+                            <span class="">Bạn có chắc muốn đóng form nhập</span>
+                            <span class="m-popup__text--bold">"Thông tin chung của thủ tục 603"</span>
+                            <span class="">hay không?</span>
+                        </div>
+                    </div>
+                    <button class="m-popup__closebtn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="m-popup__command">
+                    <button class="m-button m-button--newcl">Hủy</button>
+                    <button class="m-button m-button--alert">Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pop-up cảnh báo nhẹ -->
+
+    <div class="m-row">
+        <label for="">10.1 Pop-up cảnh báo nhẹ</label><br>
+        <button class="m-button" id="show-popup--warning">Hiện pop-up</button>
+        <div class="m-popup" id="popup--warning">
+            <div class="m-popup-container">
+                <div class="m-popup__main">
+                    <div class="m-popup__title">Đóng form thông tin chung</div>
+                    <div class="m-popup__content">
+                        <div class="m-popup__icon m-popup__icon--show"> <i
+                                class="fas fa-exclamation-triangle m-popup__icon--warning"></i></div>
+                        <div class="m-popup__text">
+                            <span class="">Bạn có chắc muốn đóng form nhập</span>
+                            <span class="m-popup__text--bold">"Thông tin chung của thủ tục 603"</span>
+                            <span class="">hay không?</span>
+                        </div>
+                    </div>
+                    <button class="m-popup__closebtn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="m-popup__command">
+                    <button class="m-button m-button--newcl">Tiếp tục nhập</button>
+                    <button class="m-button">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- table -->
+
+    <div class="m-row">
+        <label for="">9. Table (with selected)</label>
+        <div class="m-row">
+            <table class="m-table">
+                <thead>
+                    <tr>
+                        <th class="m-text-align-center" style="width: 10px"></th>
+                        <th class="m-text-align-center" style="width: 10px">#</th>
+                        <th class="m-text-align-left " style="width: 100px">
+                            <div class="m-table-sort">Mã nhân viên</div>
+                        </th>
+                        <th class="m-text-align-left" style="min-width: 150px">
+                            <div class="m-table-sort">Họ và tên</div>
+                        </th>
+                        <th class="m-text-align-center" style="width: 100px">
+                            <div class="m-table-sort">Ngày sinh</div>
+                        </th>
+                        <th class="m-text-align-right" style="width: 100px">
+                            <div class="m-table-sort">Mức lương</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="m-row-selected">
+                        <td class="m-text-align-center"><button class="m-table-buton m-table-buton-check"></button></td>
+                        <td class="m-text-align-center">1</td>
+                        <td class="m-text-align-left">NV001</td>
+                        <td class="m-text-align-left">Tô Nguyễn Đức Mạnh</td>
+                        <td class="m-text-align-center">14/03/2000</td>
+                        <td class="m-text-align-right">2.000.000.000đ</td>
+                    </tr>
+                    <tr>
+                        <td class="m-text-align-center"><button class="m-table-buton"></button></td>
+                        <td class="m-text-align-center">1</td>
+                        <td class="m-text-align-left">NV002</td>
+                        <td class="m-text-align-left">Nguyễn Hải Nam</td>
+                        <td class="m-text-align-center">14/02/2000</td>
+                        <td class="m-text-align-right">1.345.000.000đ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <br><br><br><br>
+
+
+    <!-- page navigation opening -->
+    <div class="m-row">
+        <div>8.2 Page navigation opening</div>
+        <div class="m-paging">
+
+            <!-- left -->
+
+            <div class="m-paging-left">
+                <div>Hiển thị</div>
+                <div class="m-paging-left-modify--bold">01-23/123</div>
+                <div>lao động</div>
+            </div>
+
+            <!-- center -->
+
+            <div class="m-paging-center">
+                <button class="m-paging-first-page">
+
+                </button>
+                <button class="m-paging-prev">
+
+                </button>
+                <div class="m-paging-number-group">
+                    <button class="m-paging-number m-paging-number-selected">1</button>
+                    <button class="m-paging-number">2</button>
+                    <button class="m-paging-number">3</button>
+                    <button class="m-paging-number">4</button>
+                </div>
+                <button class="m-paging-next">
+
+                </button>
+                <button class="m-paging-last-page">
+
+                </button>
+            </div>
+
+            <!-- right -->
+
+            <div class="m-paging-right">
+                <div class="m-paging-right-content m-paging-right-content-icon">
+                    <div class="m-paging-right-content-bold">10 </div>
+                    <div>lao động/trang</div>
+                </div>
+                <div class="m-paging-right-box m-paging-right-box-open">
+                    <div class="m-paging-right-item">
+                        <div class="m-paging-right-select">
+                            <div class="m-paging-right-select-bold">10 </div>
+                            <div>lao động/trang</div>
+                        </div>
+                    </div>
+                    <div class="m-paging-right-item">
+                        <div class="m-paging-right-select">
+                            <div class="m-paging-right-select-bold">20 </div>
+                            <div>lao động/trang</div>
+                        </div>
+                    </div>
+                    <div class="m-paging-right-item">
+                        <div class="m-paging-right-select">
+                            <div class="m-paging-right-select-bold">50 </div>
+                            <div>lao động/trang</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page navigation not open -->
+
+    <div class="m-row">
+        <div>8.1 Page navigation not open</div>
+        <div class="m-paging">
+
+            <!-- left -->
+
+            <div class="m-paging-left">
+                <div>Hiển thị</div>
+                <div class="m-paging-left-modify--bold">01-23/123</div>
+                <div>lao động</div>
+            </div>
+
+            <!-- center -->
+
+            <div class="m-paging-center">
+                <button class="m-paging-first-page">
+
+                </button>
+                <button class="m-paging-prev">
+
+                </button>
+                <div class="m-paging-number-group">
+                    <button class="m-paging-number m-paging-number-selected">1</button>
+                    <button class="m-paging-number">2</button>
+                    <button class="m-paging-number">3</button>
+                    <button class="m-paging-number">4</button>
+                </div>
+                <button class="m-paging-next">
+
+                </button>
+                <button class="m-paging-last-page">
+
+                </button>
+            </div>
+
+            <!-- right -->
+
+            <div class="m-paging-right">
+                <div class="m-paging-right-content">
+                    <div class="m-paging-right-content-bold m-paging-right-content-icon">10 </div>
+                    <div>lao động/trang</div>
+                </div>
+                <div class="m-paging-right-box">
+                    <div class="m-paging-right-item">
+                        <div class="m-paging-right-content">
+                            <div class="m-paging-right-content-bold">10 </div>
+                            <div>lao động/trang</div>
+                        </div>
+                    </div>
+                    <div class="m-paging-right-item">
+                        <div class="m-paging-right-content">
+                            <div class="m-paging-right-content-bold">20 </div>
+                            <div>lao động/trang</div>
+                        </div>
+                    </div>
+                    <div class="m-paging-right-item">
+                        <div class="m-paging-right-content">
+                            <div class="m-paging-right-content-bold">50 </div>
+                            <div>lao động/trang</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- toast message -->
+
+    <div class="m-row">
+        <label for="">7. Toast message (góc màn hình)</label>
+        <div class="m-row">
+            <button class="m-button m-show-toast">Hiện toast</button>
+        </div>
+        <div class="m-row">
+            <div class="m-toast-box">
+                <div class="m-toast-item">
+                    <div class="m-toast-left">
+                        <div class="m-toast-icon m-toast-error">
+                            <i class="fas fa-exclamation-triangle m-toast-icon-color"></i>
+                        </div>
+                        <div class="m-toast-text">
+                            Nội dung đi kèm tiêu đề
+                        </div>
+                    </div>
+                    <div class="m-toast-close m-toast-close-error">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="m-toast-item">
+                    <div class="m-toast-left">
+                        <div class="m-toast-icon m-toast-warning">
+                            <i class="fas fa-exclamation-circle m-toast-icon-color"></i>
+                        </div>
+                        <div class="m-toast-text">
+                            Nội dung đi kèm tiêu đề
+                        </div>
+                    </div>
+                    <div class="m-toast-close m-toast-close-warning">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="m-toast-item">
+                    <div class="m-toast-left">
+                        <div class="m-toast-icon m-toast-success">
+                            <i class="fas fa-check m-toast-icon-color"></i>
+                        </div>
+                        <div class="m-toast-text">
+                            Nội dung đi kèm tiêu đề
+                        </div>
+                    </div>
+                    <div class="m-toast-close m-toast-close-success">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="m-toast-item">
+                    <div class="m-toast-left">
+                        <div class="m-toast-icon m-toast-notify">
+                            <i class="fas fa-info m-toast-icon-color"></i>
+                        </div>
+                        <div class="m-toast-text">
+                            Nội dung đi kèm tiêu đề
+                        </div>
+                    </div>
+                    <div class="m-toast-close m-toast-close-notify">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- field input icon error -->
+
+    <div class="m-row">
+        <div class="m-row">
+            <div class="m-inputiconcontainer">
+                <label for="">6.2 Field Input icon error</label>
+                <div class="m-error-info">
+                    <div class="m-error-text">
+                        Mật khẩu không đúng định dạng
+                    </div>
+                    <div class="m-error-arrow">
+
+                    </div>
+                </div>
+                <input type="text" name="" class="m-input m-input-icon  m-input-error m-input-16"
+                    placeholder="Tìm kiếm theo tên, số hồ sơ">
+                <i class="fas fa-times m-input__clear m-input__clear--showing"></i>
+            </div>
+        </div>
+    </div>
+    <!-- field input icon -->
+    <div class="m-row">
+        <div class="m-inputiconcontainer">
+            <label for="">6.1 Field Input icon</label>
+            <div class="m-row">
+                <input type="text" name="" class="m-input m-input-icon m-input-16"
+                    placeholder="Tìm kiếm theo tên, số hồ sơ">
+                <i class="fas fa-times m-input__clear"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- field input-label-musthave -->
+
+    <div class="m-row">
+        <div class="m-inputlabelcontainer">
+            <label for="">5.3 Field Input-label-musthave</label>
+            <div class="m-row">
+                <label for="" class="m-label">Label</label> <span class="m-label--musthave">*</span><br>
+                <input type="text" name="" class="m-input" placeholder="Tìm kiếm theo tên, số hồ sơ">
+                <i class="fas fa-times m-input__clear"></i>
+            </div>
+        </div>
+    </div>
+    <!-- filed input label error -->
+
+    <div class="m-row">
+        <div class="m-inputlabelcontainer">
+            <label for="">5.2. Field Input error</label>
+            <div class="m-row">
+                <div class="m-error-info">
+                    <div class="m-error-tex">
+                        Mật khẩu không đúng định dạng
+                    </div>
+                    <div class="m-error-arrow">
+
+                    </div>
+                </div>
+                <input type="text" name="" class="m-input m-input-error" placeholder="Tìm kiếm theo tên, số hồ sơ">
+                <i class="fas fa-times m-input__clear m-input__clear--showing"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- field input-label -->
+
+    <div class="m-row">
+        <div class="m-inputlabelcontainer">
+            <label for="">5.1 Field Input-label</label>
+            <div class="m-row">
+                <label for="" class="m-label">Label</label><br>
+                <input type="text" name="" class="m-input" placeholder="Tìm kiếm theo tên, số hồ sơ">
+                <i class="fas fa-times m-input__clear"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--  combobox flex -->
+
+    <div class="m-row">
+        <div class="m-combobox-flex">
+            <div class="m-combobox-container">
+                <label for="" class="m-combobox__label">Chọn tháng</label>
+                <div class="m-combobox">
+                    <input type="text" class="m-combobox__input" placeholder="Chọn/Nhập thông tin">
+                    <div class="m-combobox__drop">
+                        <i class="fas fa-chevron-down m-combobox__icon"></i>
+                    </div>
+                </div>
+                <div class="m-combobox__option">
+                    <div class="m-combobox__item">Trạng thái 1</div>
+                    <div class="m-combobox__item">Trạng thái 2</div>
+                    <div class="m-combobox__item m-combobox__item--selected">Trạng thái 3</div>
+                </div>
+            </div>
+            <div class="m-combobox-container">
+                <label for="" class="m-combobox__label">Chọn tháng</label>
+                <div class="m-combobox">
+                    <input type="text" class="m-combobox__input" placeholder="Chọn/Nhập thông tin">
+                    <div class="m-combobox__drop">
+                        <i class="fas fa-chevron-down m-combobox__icon"></i>
+                    </div>
+                </div>
+                <div class="m-combobox__option">
+                    <div class="m-combobox__item">Trạng thái 1</div>
+                    <div class="m-combobox__item">Trạng thái 2</div>
+                    <div class="m-combobox__item m-combobox__item--selected">Trạng thái 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- combobox opening -->
+
+    <div class="m-row">
+        <label for="">4.2 Combobox (open)</label>
+        <div class="m-row">
+            <div class="m-combobox-container">
+                <label for="" class="m-combobox__label">Chọn tháng</label>
+                <div class="m-combobox m-combobox--opening">
+                    <input type="text" class="m-combobox__input" placeholder="Chọn/Nhập thông tin">
+                    <div class="m-combobox__drop m-combobox__drop--open">
+                        <i class="fas fa-chevron-down m-combobox__icon m-combobox__icon--open"></i>
+                    </div>
+                </div>
+                <div class="m-combobox__option m-combobox__option--show">
+                    <div class="m-combobox__item">Trạng thái 1</div>
+                    <div class="m-combobox__item">Trạng thái 2</div>
+                    <div class="m-combobox__item m-combobox__item--selected">Trạng thái 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- combobox - not opening --> <br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="m-row">
+        <label for="">4.1 Combobox (close)</label>
+        <div class="m-row">
+            <div class="m-combobox-container">
+                <label for="" class="m-combobox__label">Chọn tháng</label>
+                <div class="m-combobox">
+                    <input type="text" class="m-combobox__input" placeholder="Chọn/Nhập thông tin">
+                    <div class="m-combobox__drop">
+                        <i class="fas fa-chevron-down m-combobox__icon"></i>
+                    </div>
+                </div>
+                <div class="m-combobox__option">
+                    <div class="m-combobox__item">Trạng thái 1</div>
+                    <div class="m-combobox__item">Trạng thái 2</div>
+                    <div class="m-combobox__item m-combobox__item--selected">Trạng thái 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- button-icon-combo -->
+
+    <div class="m-row">
+        <label for="">3. Button-icon-combo</label>
+        <div class="m-row">
+            <div class="combo-button">
+                <button class="m-button m-button-left">
+                    <i class="far fa-save m-icon"></i>
+                    Lưu và thêm mới
+                </button>
+                <button class="m-button m-button-right">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- button-icon -->
+
+    <div class="m-row">
+        <label for="">2. Button-icon</label>
+        <div class="m-row">
+            <button class="m-button m-button-icon">
+                <i class="fas fa-plus m-icon"></i>
+                Lập hồ sơ
+            </button>
+        </div>
+    </div>
+
+    <!-- button -->
+
+    <div class="m-row">
+        <label for="">1. Button</label>
+        <div class="m-row">
+            <button class="m-button">Đồng ý</button>
+        </div>
+    </div>
+</body>
+
+</html>
