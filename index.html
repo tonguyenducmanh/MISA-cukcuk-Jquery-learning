@@ -32,10 +32,11 @@
     <div class="m-row">
         <label for="">10.5 Pop-up thông tin nhân viên</label><br>
         <button class="m-button" id="show-popup--infoem">Hiện pop-up</button>
-        <div class="m-popup m-popup-custom" id="popup--infoem">
+        <div class="m-popup m-popup-custom" id="popupInfoEm">
             <div class="m-popup-container m-popup-container--width">
+                <div class="m-popup__title m-popup__title--uppercase">Thông tin nhân viên</div>
+                <button class="m-popup__closebtn"><i class="fas fa-times"></i></button>
                 <div class="m-popup__main">
-                    <div class="m-popup__title m-popup__title--uppercase">Thông tin nhân viên</div>
                     <div class="m-popup__content">
                         <div class="">
                             <div class="m-popup__avatar">
@@ -53,7 +54,7 @@
                                 <div class="m-inputlabelcontainer">
                                     <label for="" class=''>Mã nhân viên </label>(<span
                                         class="m-label--musthave">*</span>)<br>
-                                    <input type="text" name="" class="m-input" placeholder="Nhập mã nhân viên">
+                                    <input type="text" name="" class="m-input" placeholder="Nhập mã nhân viên" id ='EmployeeCodeInput'>
                                     <i class="fas fa-times m-input__clear"></i>
                                 </div>
                                 <div class="m-inputlabelcontainer">
@@ -173,7 +174,6 @@
                             </div>
                         </div>
                     </div>
-                    <button class="m-popup__closebtn"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="m-popup__command">
                     <button class="m-button m-button--newcl">Hủy</button>
