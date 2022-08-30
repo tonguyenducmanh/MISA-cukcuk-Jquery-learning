@@ -11,6 +11,8 @@
 @import url(./base/paging.css);
 @import url(./base/popup.css);
 @import url(./base/icon.css);
+@import url(./base/loading.css);
+
 
 /* xóa file temp này đi */
 @import url(./temp.css);
@@ -54,7 +56,7 @@ body {
     src: url(../assets/font/fontawesome-5.15.1/webfonts/fa-solid-900.ttf);
 }
 
-.main{
+.main {
     width: 100%;
     height: calc(100vh - 48px);
     display: flex;
@@ -64,20 +66,21 @@ body {
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
-    border-radius: 4px ; 
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+    border-radius: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
+
